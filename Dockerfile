@@ -20,3 +20,9 @@ RUN chmod 755 /usr/sbin/policy-rc.d
 
 # Install BitlBee
 RUN apt-get install -y bitlbee
+
+EXPOSE 6667
+
+ENTRYPOINT ["/usr/sbin/bitlbee"]
+
+CMD ["-F", "-n", "-u", "bitlbee"]
