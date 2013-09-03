@@ -19,4 +19,4 @@ RUN echo 'exit 101' >> /usr/sbin/policy-rc.d
 RUN chmod 755 /usr/sbin/policy-rc.d
 
 # Install BitlBee
-RUN apt-get install bitlbee
+RUN apt-get install -y bitlbee
