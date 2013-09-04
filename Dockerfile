@@ -21,6 +21,9 @@ RUN chmod 755 /usr/sbin/policy-rc.d
 # Install BitlBee
 RUN apt-get install -y bitlbee
 
+# Expose the directory where bitlbee stores it's user configuration data
+VOLUME ["/var/lib/bitlbee"]
+
 EXPOSE 6667
 
 ENTRYPOINT ["/usr/sbin/bitlbee"]
