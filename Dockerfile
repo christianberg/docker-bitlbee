@@ -28,4 +28,4 @@ EXPOSE 6667
 
 ENTRYPOINT ["/usr/sbin/bitlbee"]
 
-CMD ["-F", "-n", "-u", "bitlbee"]
+CMD ["-F", "-n"]
